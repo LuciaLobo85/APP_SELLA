@@ -6,7 +6,8 @@ import { IconModule } from '@coreui/icons-angular';
 
 import { ColorsComponent, ThemeColorComponent } from './colors.component';
 import { TypographyComponent } from './typography.component';
-
+import { EstanteriasComponent } from './estanterias.component';
+import { UbicacionesComponent } from './ubicaciones.component';
 // Theme Routing
 import { ThemeRoutingModule } from './theme-routing.module';
 
@@ -25,6 +26,8 @@ import { ThemeRoutingModule } from './theme-routing.module';
     ColorsComponent,
     ThemeColorComponent,
     TypographyComponent,
+    EstanteriasComponent,
+    UbicacionesComponent,
   ]
 })
 export class ThemeModule {

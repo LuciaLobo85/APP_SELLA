@@ -1,102 +1,97 @@
 import { INavData } from '@coreui/angular';
 
+
 export const navItems: INavData[] = [
   {
     name: 'Dashboard',
     url: '/dashboard',
-    iconComponent: { name: 'cil-speedometer' },
-    badge: {
-      color: 'info',
-      text: 'NEW'
-    }
+   
   },
+
   {
-    title: true,
-    name: 'Theme'
-  },
-  {
-    name: 'Colors',
-    url: '/theme/colors',
-    iconComponent: { name: 'cil-drop' }
-  },
-  {
-    name: 'Typography',
-    url: '/theme/typography',
-    linkProps: { fragment: 'someAnchor' },
-    iconComponent: { name: 'cil-pencil' }
-  },
-  {
-    name: 'Components',
-    title: true
-  },
-  {
-    name: 'Base',
-    url: '/base',
+    name: 'ALMACÉN',
+    url: '/theme',
     iconComponent: { name: 'cil-puzzle' },
     children: [
       {
-        name: 'Accordion',
-        url: '/base/accordion'
+        name: 'Zonas',
+        url: '/theme/colors'
       },
       {
-        name: 'Breadcrumbs',
-        url: '/base/breadcrumbs'
+        name: 'Pasillos',
+        url: '/theme/typography'
+   
       },
       {
-        name: 'Cards',
-        url: '/base/cards'
+        name: 'Estanterias',
+        url: '/theme/estanterias',
+       
+        
       },
+    
       {
-        name: 'Carousel',
-        url: '/base/carousel'
+        name: 'Ubicaciones',
+        url: '/theme/ubicaciones',
+       
+        
       },
-      {
-        name: 'Collapse',
-        url: '/base/collapse'
-      },
-      {
-        name: 'List Group',
-        url: '/base/list-group'
-      },
-      {
-        name: 'Navs & Tabs',
-        url: '/base/navs'
-      },
-      {
-        name: 'Pagination',
-        url: '/base/pagination'
-      },
-      {
-        name: 'Placeholder',
-        url: '/base/placeholder'
-      },
-      {
-        name: 'Popovers',
-        url: '/base/popovers'
-      },
-      {
-        name: 'Progress',
-        url: '/base/progress'
-      },
-      {
-        name: 'Spinners',
-        url: '/base/spinners'
-      },
-      {
-        name: 'Tables',
-        url: '/base/tables'
-      },
-      {
-        name: 'Tabs',
-        url: '/base/tabs'
-      },
-      {
-        name: 'Tooltips',
-        url: '/base/tooltips'
-      }
+
+     
+     
     ]
   },
+
   {
+    name: 'USUARIOS',
+    url: '/usuarios/usuariosList',
+    iconComponent: { name: 'cil-user' },
+  },
+
+ 
+  {
+    name: 'ALTAS',
+    url: '/altas',
+    iconComponent: { name: 'cil-notes' },
+    children: [
+      
+      {
+        name: 'Vehículos',
+        url: '/altas/vehiculos'
+      },
+
+      {
+        name: 'Recambios',
+        url: '/altas/recambios'
+      },
+    
+    ]
+  },
+
+  {
+    name: 'REGULARIZACIÓN',
+    url: '/regularizacion',
+    iconComponent: { name: 'cil-pencil'},
+    children: [
+      
+      {
+        name: 'Vehículos',
+        url: '/regularizacion/vehiculos'
+      },
+
+      {
+        name: 'Recambios',
+        url: '/regularizacion/recambios'
+      },
+    
+    ]
+  },
+
+  {
+    name: 'VENTA ONLINE',
+    url: '',
+    iconComponent: { name: 'cil-basket' },
+  },
+  /*{
     name: 'Buttons',
     url: '/buttons',
     iconComponent: { name: 'cil-cursor' },
@@ -114,7 +109,7 @@ export const navItems: INavData[] = [
         url: '/buttons/dropdowns'
       },
     ]
-  },
+  }, 
   {
     name: 'Forms',
     url: '/forms',
@@ -154,11 +149,7 @@ export const navItems: INavData[] = [
       }
     ]
   },
-  {
-    name: 'Charts',
-    url: '/charts',
-    iconComponent: { name: 'cil-chart-pie' }
-  },
+
   {
     name: 'Icons',
     iconComponent: { name: 'cil-star' },
@@ -240,5 +231,5 @@ export const navItems: INavData[] = [
         url: '/500'
       }
     ]
-  },
+  }, */
 ];

@@ -1,34 +1,40 @@
 <div class="fade-in">
   <c-card class="mb-4">
     <c-card-header>
-      Theme colors
+     <strong>Maestro de zonas</strong> 
+     <button type="button"  class="btn btn-dark float-end"><strong>+ Añadir</strong></button>
     </c-card-header>
     <c-card-body>
       <c-row>
-        <app-theme-color color="primary">
-          <h6>Brand Primary Color</h6>
-        </app-theme-color>
-        <app-theme-color color="secondary">
-          <h6>Brand Secondary Color</h6>
-        </app-theme-color>
-        <app-theme-color color="success">
-          <h6>Brand Success Color</h6>
-        </app-theme-color>
-        <app-theme-color color="danger">
-          <h6>Brand Danger Color</h6>
-        </app-theme-color>
-        <app-theme-color color="warning">
-          <h6>Brand Warning Color</h6>
-        </app-theme-color>
-        <app-theme-color color="info">
-          <h6>Brand Info Color</h6>
-        </app-theme-color>
-        <app-theme-color color="light">
-          <h6>Brand Light Color</h6>
-        </app-theme-color>
-        <app-theme-color color="dark">
-          <h6>Brand Dark Color</h6>
-        </app-theme-color>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Zona</th>
+              <th scope="col">Código</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Bloqueada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <td scope="row">2</td>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <td scope="row">3</td>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
       </c-row>
     </c-card-body>
   </c-card>

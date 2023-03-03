@@ -30,10 +30,24 @@ const routes: Routes = [
         loadChildren: () =>
           import('./views/theme/theme.module').then((m) => m.ThemeModule)
       },
+
       {
-        path: 'base',
+        path: 'usuarios',
         loadChildren: () =>
-          import('./views/base/base.module').then((m) => m.BaseModule)
+          import('./views/usuarios/usuarios.module').then((m) => m.UsuariosModule)
+      },
+
+      {
+        path: 'altas',
+        loadChildren: () =>
+          import('./views/altas/altas.module').then((m) => m.AltasModule)
+      },
+
+
+      {
+        path: 'regularizacion',
+        loadChildren: () =>
+          import('./views/regularizacion/regularizacion.module').then((m) => m.RegularizacionModule)
       },
       {
         path: 'buttons',
@@ -45,11 +59,7 @@ const routes: Routes = [
         loadChildren: () =>
           import('./views/forms/forms.module').then((m) => m.CoreUIFormsModule)
       },
-      {
-        path: 'charts',
-        loadChildren: () =>
-          import('./views/charts/charts.module').then((m) => m.ChartsModule)
-      },
+     
       {
         path: 'icons',
         loadChildren: () =>
@@ -116,3 +126,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule {
 }
+
