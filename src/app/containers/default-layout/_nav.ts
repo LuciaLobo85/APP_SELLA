@@ -87,6 +87,25 @@ export const navItems: INavData[] = [
   },
 
   {
+    name: 'BÚSQUEDAS',
+    url: '/busquedas',
+    iconComponent: { name: 'cil-magnifying-glass'},
+    children: [
+      
+      {
+        name: 'Vehículos',
+        url: '/busquedas/vehiculos'
+      },
+
+      {
+        name: 'Recambios',
+        url: '/busquedas/recambios'
+      },
+    
+    ]
+  },
+
+  {
     name: 'VENTA ONLINE',
     url: '',
     iconComponent: { name: 'cil-basket' },

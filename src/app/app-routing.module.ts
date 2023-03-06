@@ -50,9 +50,9 @@ const routes: Routes = [
           import('./views/regularizacion/regularizacion.module').then((m) => m.RegularizacionModule)
       },
       {
-        path: 'buttons',
+        path: 'busquedas',
         loadChildren: () =>
-          import('./views/buttons/buttons.module').then((m) => m.ButtonsModule)
+          import('./views/busquedas/busquedas.module').then((m) => m.BusquedasModule)
       },
       {
         path: 'forms',
